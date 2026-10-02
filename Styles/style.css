@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* O padding não interfere na largura dos elementos*/
+}
+
+.main-header {
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(104, 104, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pd-title {
+    
+}
+
+.pd-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.list-style {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.highlight-background {
+    width: 50px;
+    height: 50px;
+}
