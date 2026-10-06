@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    padding: 0 10px;
+    padding: 0;
     
     background-color: #0b111859;
 
@@ -16,9 +16,7 @@ body {
 .main-header {
     width: 100%;
     height: 10vh;
-    margin-top: 10px;
-    border-radius: 15px;
-    padding: 10px 80px;
+    padding: 0 80px;
 
     background-color: #151f2ada;
     color: #FFFFFF;
@@ -29,12 +27,21 @@ body {
     align-items: center;
 }
 
-.pd-logo-and-name {
-    padding: 5px;
-    
+.header-elements {
+    height: 100%;
+}
+
+.elements-align {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     gap: 15px;
+}
+
+
+.elements-align li {
+    list-style: none;
 }
 
 .pd-name {
@@ -47,6 +54,8 @@ body {
     height: 35px; /* Altura em relação ao elemento pai */
 }
 
+
+
 .list-style {
     display: flex;
     list-style: none;
@@ -55,19 +64,19 @@ body {
 
 .link-style {
     padding: 10px;
-    border-radius: 10px;
     color: #FFFFFF;
     text-decoration: none; /* Retirando a linha abaixo do texto*/
     font-size: 15px;
+    font-weight: 500;
 }
 
 .link-style:hover {
+    border-radius: 10px;
     background-color:  #151f2a79;
-    border-bottom: 3px solid #4b1f25;
+    border-bottom: 3px solid #4B1F25;
 }
 
 /*======================================================================================*/
-
 .highlight-background {
     width: 100%;
     height: 100vh;
