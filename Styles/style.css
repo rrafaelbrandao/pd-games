@@ -1,4 +1,4 @@
-/* =====Estilização aplicada a todo o corpo da página=====*/
+/* ===== Estilização aplicada a todo o corpo da página =====*/
 * {
     box-sizing: border-box; /* O padding não interfere na largura dos elementos */
 }
@@ -7,18 +7,31 @@ body {
     margin: 0;
     padding: 0;
     
-    background-color: #0b111859;
-
-    font-family: "Inter", sans-serif;
+    background-color: #0b1118be;
 }
 
-/* =====Estilização da barra de navegação===== */
+.titulos {
+    font-family: "Cinzel", serif;
+    color: #e8e0cf;
+}
+
+.textos {
+    font-family: "Montserrat", sans-serif;
+    color: #e8e0cf;
+}
+
+/* ===== Header ===== */
+/* ===== Estilização da barra de navegação ===== */
 .main-header {
     width: 100%;
     height: 10vh;
     padding: 0 80px;
 
-    background-color: #151f2ada;
+    /* Deixando o header fixo no topo, mesmo ao rolar a página*/
+    position: sticky;
+    top: 0;
+
+    background-color: #151f2a;
     color: #FFFFFF;
 
     display: flex;
@@ -49,12 +62,14 @@ body {
     font-weight: 800;
 }
 
+.pd-name:hover {
+    color: #4B1F25;
+}
+
 .pd-logo {
     width: auto;
     height: 35px; /* Altura em relação ao elemento pai */
 }
-
-
 
 .list-style {
     display: flex;
@@ -71,13 +86,76 @@ body {
 }
 
 .link-style:hover {
-    border-radius: 10px;
-    background-color:  #151f2a79;
-    border-bottom: 3px solid #4B1F25;
+    border-radius: 5px;
+    background-color:  #33485a;
+    border-bottom: 5px solid #4B1F25;
 }
 
-/*======================================================================================*/
-.highlight-background {
+/* ===== Main ===== */
+/* =====Conteúdo de destaque=====*/
+.highlight-area {
+    /* Tamanho */
     width: 100%;
-    height: 100vh;
+    height: 90vh; /* O header já ocupa 10vh*/
+
+    /* Configuração da imagem de fundo*/
+    background-image: url("/Assets/galactic-suvivor-2.jpeg");
+    background-size: cover; /* Cobre toda a área sem distorcer */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+
+    /* Configuração dos textos*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 15px; /* Dando um espaçamento superior*/
+}
+
+.highlight-area h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+.highlight-area p {
+    margin-top: 0;
+
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.games-and-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.game-card {
+    width: 30%;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+}
+
+.game-card img {
+    width: 90%;
+    height: 300px;
+}
+
+.main-footer {
+    background-color: #151f2a;;
 }
