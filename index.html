@@ -4,62 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/style.css">
-    <!-- Link das fontes usadas -->
+    <!-- Links das Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Título -->
     <title>PD Games | Home</title>
 </head>
 <body>
-     <!-- Cabeçalho com navegação -->
+     <!-- Cabeçalho com Navegação -->
     <header class="main-header">
-        <div class="header-elements elements-align">
-            <img class="pd-logo" src="Assets/pd-games-logo.png" alt="PD Games - Logo">
-            <span class="pd-name">PD GAMES</span>
+        <!-- Container da Logo -->
+        <div class="logo-container">
+            <img class="pd-logo" src="Assets/pd-games-logo-atual.png" alt="PD Games - Logo">
         </div>
-        <nav class="header-elements">
-            <ul class="elements-align">
-                <li><a class="link-style" href="index.html">Home</a></li>
-                <li><a class="link-style" href="Pages/sobre-a-empresa.html">Sobre</a></li>
-                <li><a class="link-style" href="Pages/produtos.html">Produtos</a></li>
-                <li><a class="link-style" href="Pages/contato.html">Contato</a></li>
+
+        <!-- Menu de navegação -->
+        <nav class="main-nav">
+            <ul>
+                <li><a class="link-style montserrat-textos" href="index.html">Home</a></li>
+                <li><a class="link-style montserrat-textos" href="Pages/sobre-a-empresa.html">Sobre</a></li>
+                <li><a class="link-style montserrat-textos" href="Pages/produtos.html">Produtos</a></li>
+                <li><a class="link-style montserrat-textos" href="Pages/contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
+
      <!-- Conteúdo principal --> 
     <main>
         <!-- 1. Área de destaque -->
         <section class="highlight-area">
-            <h2 class="titulos">Galactic Survivor</h2>
-            <p class="textos">O universo é infinito. Suas chances, não.</p>
-        </section>
-        <!-- 2. Jogos e Produtos -->
-         <h2 class="titulos">Próximos Lançamentos</h2>
-         <section class="games-and-products">
-            <article class="game-card">
-                <h3 class="titulos">The Last of Us</h3>
-                <p class="textos">Naughty Dog</p>
-                <img src="Assets/the-last-of-us.jpeg" alt="">
-            </article>
-            <article class="game-card">
-                <h3 class="titulos">Uncharted</h3>
-                <p class="textos">Naughty Dog</p>
-                <img src="Assets/the-last-of-us.jpeg" alt="">
-            </article>
-            <article class="game-card">
-                <h3 class="titulos">GTA VI</h3>
-                <p class="textos">Rockstar Games</p>
-                <img src="Assets/the-last-of-us.jpeg" alt="">
-            </article>
+            <!-- Coluna 1: Título na esquerda -->
+            <div class="titulo-destaque">
+                <h2 class="cinzel-titulos">Galactic Survivor</h2>
+            </div>
 
+            <!-- Coluna 2: Imagem central -->
+            <div class="imagem-destaque">
+                <img src="Assets/galactic-survivor.jpeg" alt="">
+            </div>
+            
+            <!-- Coluna 3: Texto na direita -->
+            <div class="texto-destaque">
+                <p class="monteserrat-textos">O universo é infinito</p>
+                <br>
+                <p class="monteserrat-textos">Suas chances não</p>
+            </div>
+        </section>
+
+        <!-- 2. Jogos e Produtos -->
+         <section class="succes-section">
+            <!-- Título da Seção -->
+            <div class="section-title-container">
+                <h2 class="cinzel-titulos">Alguns de nossos sucessos</h2>
+            </div>
+
+             <!-- Container dos cards de jogos -->
+            <div class="games-and-products">
+                <!-- The Last of Us -->
+                <article class="game-card">
+                    <div class="card-image-container">
+                        <img src="Assets/the-last-of-us.jpeg" alt="Capa do jogo The Last of Us">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="cinzel-titulos">The Last of Us</h3>
+                        <p class="montserrat-textos">Naughty Dog</p>
+                    </div>
+                </article>
+
+                <!-- Uncharted -->
+                <article class="game-card">
+                    <div class="card-image-container">
+                        <img src="Assets/uncharted.jpeg" alt="Capa do jogo The Last of Us">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="cinzel-titulos">Uncharted</h3>
+                        <p class="montserrat-textos">Naughty Dog</p>
+                    </div>
+                </article>
+
+                <!-- GTA VI -->
+                <article class="game-card">
+                    <div class="card-image-container">
+                        <img src="Assets/gta-6.jpeg" alt="Capa do jogo The Last of Us">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="cinzel-titulos">GTA VI</h3>
+                        <p class="montserrat-textos">Rockstar Games</p>
+                    </div>
+                </article>
+            </div>
          </section>
     </main>
-
     <footer class="main-footer">
-        <p class="textos">&copy; 2026 PD Games. Todos os direitos reservados.</p>
-        <p class="textos">Contato: contato@pdgames.com.br</p>
+        <div class="footer-content">
+            <p class="montserrat-textos">&copy; 2026 PD Games. Todos os direitos reservados.</p>
+            <p class="montserrat-textos">Contato: contato@pdgames.com.br</p>
+        </div>
     </footer>
-
 </body>
 </html>

@@ -1,161 +1,347 @@
-/* ===== Estilização aplicada a todo o corpo da página =====*/
+/* ===== Geral ===== */
+
 * {
-    box-sizing: border-box; /* O padding não interfere na largura dos elementos */
+    box-sizing: border-box; /* Vai garantir que o padding e o border sejam calculados dentro das dimensões especificadas*/
 }
 
 body {
+    /* Tamanho */
     margin: 0;
     padding: 0;
     
-    background-color: #0b1118be;
+    /* Estilização */
+    background-color: #ffffffbe;
 }
 
-.titulos {
+.cinzel-titulos {
+    /* Textos*/
     font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    /* Cores */
     color: #e8e0cf;
 }
 
-.textos {
+.montserrat-textos {
+    /* Textos*/
     font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+
+    /* Cores */
     color: #e8e0cf;
 }
 
 /* ===== Header ===== */
-/* ===== Estilização da barra de navegação ===== */
+
+/* =====  Barra de navegação ===== */
+
 .main-header {
+    /* Tamanho */
     width: 100%;
-    height: 10vh;
-    padding: 0 80px;
+    height: 15vh;
+    padding: 0 50px;
 
-    /* Deixando o header fixo no topo, mesmo ao rolar a página*/
-    position: sticky;
+    /* Posicionamento */
+    position: sticky; /* Deixando o header fixo no topo, mesmo ao rolar a página*/
     top: 0;
+    z-index: 1000; /* Garante que o header fique por cima de todos os elementos*/
 
-    background-color: #151f2a;
-    color: #FFFFFF;
+    /* Cores*/
+    background-color: #0b1118;
 
+    /* Posicionamento*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-elements {
-    height: 100%;
-}
+/* ===== Container da logo ===== */
 
-.elements-align {
+.logo-container {
+    /* Dimensões */
+    height: 70%;
+    
+    /* Posicionamento */
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    gap: 15px;
-}
-
-
-.elements-align li {
-    list-style: none;
-}
-
-.pd-name {
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.pd-name:hover {
-    color: #4B1F25;
 }
 
 .pd-logo {
+    /* Dimensões*/
+    height: 100%;
     width: auto;
-    height: 35px; /* Altura em relação ao elemento pai */
+    object-fit: contain; /** Dimensionamento da logo sem causar distorção/
+
+    /* Posicionamento */
+    display: flex;
+    align-items: center;
 }
 
-.list-style {
+/* ===== Menu de navegação ===== */
+
+.main-nav ul {
+    /*Dimensões*/
+    margin: 0;
+    padding: 0;
+
+    /* Posicionamento*/
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px; /*Espaçamento entre os elementos*/
+
+    /* Estilo */
     list-style: none;
-    gap: 15px;
 }
 
 .link-style {
-    padding: 10px;
-    color: #FFFFFF;
-    text-decoration: none; /* Retirando a linha abaixo do texto*/
+    /* Dimensões */
+    padding: 8px 16px;
+
+    /*Textos*/
     font-size: 15px;
     font-weight: 500;
+
+    /* Estilo */
+    text-decoration: none;
 }
 
 .link-style:hover {
     border-radius: 5px;
     background-color:  #33485a;
-    border-bottom: 5px solid #4B1F25;
+    border-bottom: 3px solid #4B1F25;
 }
 
 /* ===== Main ===== */
-/* =====Conteúdo de destaque=====*/
+
+/* ===== Seção de destaque ===== */
+
 .highlight-area {
-    /* Tamanho */
+    /* Dimensões */
     width: 100%;
-    height: 90vh; /* O header já ocupa 10vh*/
+    height: 85vh; /* O header já ocupa 15vh*/
 
-    /* Configuração da imagem de fundo*/
-    background-image: url("/Assets/galactic-suvivor-2.jpeg");
-    background-size: cover; /* Cobre toda a área sem distorcer */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat;
+    /* Posicionamento */
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    
+}
 
-    /* Configuração dos textos*/
+/* ===== Coluna da esquerda (Título) ===== */
+
+.titulo-destaque {
+    /* Dimensões */
+    width: 15%;
+    height: 100%;
+
+    /* Posicionamneto*/
+    display: flex; /* Centralizar o h2 */
+    align-items: center;
+    justify-content: center;
+
+    /* Cores */
+    background-color: #33485a;
+}
+
+.titulo-destaque h2 {
+    /* Dimensões */
+    margin: 0; 
+
+    /* Posicionamento */
+    writing-mode: vertical-lr; /* Define o fluxo do texto na vertical (de cima para baixo) */
+    transform: rotate(180deg); /* Gira o texto 180 graus para ler confortavelmente de baixo para cima */
+    text-align: center;
+    white-space: nowrap; /* Impede que o título quebre linhas no meio do texto */
+
+    /* Textos */
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+/* ===== Coluna central (Imagem) ===== */
+
+.imagem-destaque {
+    /* Dimensões */
+    width: 65%;
+    height: 100%;
+
+    /* Posicionamento*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-destaque img {
+    /* Dimensões */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Preenche todo o espaço da div, sem distorcer a imagem*/
+}
+
+/* ===== Coluna da direita (Texto) ===== */
+
+.texto-destaque {
+    /* Dimensões*/
+    width: 20%;
+    height: 100%;
+
+    /* Posicionamento*/
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: center;
+
+    /* Cores */
+    background-color: #151f2a;
+}
+
+.texto-destaque p {
+    /* Dimensões */
+    width: 90%;
+    margin: 0;
+    padding: 5px;
+    
+    /* Posicionamento */
     text-align: center;
 
-    padding-top: 15px; /* Dando um espaçamento superior*/
+    /* Textos */
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.6; /* Aumenta a altura da linha para facilitar a leitura */
+    color: #c0c8d0;
+
+    /* Estilo */
+    background-color: #c49a52;
 }
 
-.highlight-area h2 {
-    margin-top: 0;
-    margin-bottom: 0;
+/* ===== Seção de produtos ===== */
+.succes-section {
+    /* Dimensões */
+    width: 100%;
+    padding: 60px 40px;
 
-    font-size: 40px;
-    font-weight: 700;
-
+    /* Cores */
+    background-color: #0d151e;
 }
 
-.highlight-area p {
-    margin-top: 0;
+/* ===== Container do titulo ===== */
+.section-title-container {
+    /* Dimensões */
+    margin-bottom: 40px;
 
-    font-size: 15px;
-    font-weight: 400;
+    /* Posicionamento */
+    text-align: center;
+}
+
+.section-title-container h2 {
+    /* Textos */
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 .games-and-products {
+    /* Posicionamento */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Quebra os card se a tela for pequena*/
 
 }
 
 .game-card {
-    width: 30%;
+    /* Dimensões */
+    width: 30%; 
+    min-width: 250px; /* Garante tamanho mínimo em telas menores */
 
-    border: 1px solid black;
-    border-radius: 10px;
-
+    /* Cores */
+    background-color: #151f2a;
+    border: 2px solid  #c49a52;
+    border-radius: 12px;
+    
+    /* Posicionamento */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    overflow: hidden;
+}
+
+.card-image-container {
+    /* Dimensões */
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.card-image-container img {
+    /* Dimensões */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Preencher o espaço disponível sem distorcer a imagem*/
+}
+
+.card-content h3 {
+    /* Dimensões */
+    margin: 2px;
+
+    /*Textos*/
+    font-size: 20px;
+    color: #e8e0cf;
     text-align: center;
-
 }
 
-.game-card img {
-    width: 90%;
-    height: 300px;
+.card-content p {
+    /* Dimensões */
+    margin: 2px;
+
+    /*Textos*/
+    font-size: 15px;
+    color: #e8e0cf;
+    text-align: center;
 }
+
+.game-card:hover {
+    /* Estilos */
+    transform: translateY(-8px); /* Eleva o card levemente */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-color: #4B1F25;
+}
+
+/* ===== Rodapé (Footer) ===== */
 
 .main-footer {
-    background-color: #151f2a;;
+    /* Dimensionamento */
+    width: 100%;
+    padding: 30px 20px;
+
+    /* Cores */
+    background-color: #080d13; /* Fundo ainda mais escuro para indicar o fim da página */
+    
+    /* Estilos */
+    border-top: 1px solid #1a2736; /* Linha sutil de divisão no topo */
+    
+}
+
+.footer-content {
+    /* Dimensionamento */
+    width: 100%;
+    margin: 0 auto;
+    
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+    
+    /* Texto */
+    text-align: center;
 }
