@@ -5,12 +5,18 @@
 }
 
 body {
-    /* Tamanho */
+    /* Dimensões */
     margin: 0;
     padding: 0;
     
-    /* Estilização */
-    background-color: #ffffffbe;
+    /* Estilo */
+    background-image: url('/Assets/bermuda-traingle.svg'); 
+    
+    /* Posicionamento */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .cinzel-titulos {
@@ -40,7 +46,7 @@ body {
 /* =====  Barra de navegação ===== */
 
 .main-header {
-    /* Tamanho */
+    /* Dimensões */
     width: 100%;
     height: 15vh;
     padding: 0 50px;
@@ -223,16 +229,15 @@ body {
 }
 
 /* ===== Seção de produtos ===== */
+
 .succes-section {
     /* Dimensões */
     width: 100%;
     padding: 60px 40px;
-
-    /* Cores */
-    background-color: #0d151e;
 }
 
 /* ===== Container do titulo ===== */
+
 .section-title-container {
     /* Dimensões */
     margin-bottom: 40px;
@@ -272,6 +277,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
 .card-image-container {
@@ -315,10 +321,136 @@ body {
     border-color: #4B1F25;
 }
 
+/* ===== Página Sobre a Empresa ===== */
+
+.sobre-pd-games {
+    /* Dimensões */
+    width: 100%;
+    height: 30vh;
+    padding: 30px;
+    padding-bottom: 0;
+    
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sobre-pd-games h1 {
+    /* Dimensões */
+    margin: 0;
+    padding: 0;
+
+    /* Textos */
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.sobre-pd-games p {
+    /* Textos */
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+/* ===== Seção: História, Missão, Visão e Valores ===== */
+
+.container-pilares {
+    /* Posicionamento */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 60px;
+}
+
+.pilar-card {
+    /* Dimensões */
+    width: 45%;
+    min-height: 250px;
+    padding: 15px 30px;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+
+    /* Cores */
+     background-color: #151f2a;
+
+    /* Estilo */
+    border-radius: 10px;
+    border: 2px solid  #c49a52;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.pilar-card h2 {
+    /* Textos*/
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.pilar-card p {
+    /* Textos*/
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.pilar-card:hover {
+    /* Estilos */
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-color: #4B1F25;
+}
+
+/* ===== Seção para CTA ===== */
+
+.cta-section {
+    /* Dimensões */
+    padding: 30px 15px;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cta-button {
+    /* Dimensões */
+    padding: 15px 10px;
+
+    /* Textos */
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+
+    /* Estilos */
+    border-radius: 10px;
+
+    /* Cores */
+    background-color:#c49a52
+}
+
+.cta-button:hover {
+    /* Estilos */
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+} 
+
 /* ===== Rodapé (Footer) ===== */
 
 .main-footer {
-    /* Dimensionamento */
+    /* Dimensões */
     width: 100%;
     padding: 30px 20px;
 
@@ -331,7 +463,7 @@ body {
 }
 
 .footer-content {
-    /* Dimensionamento */
+    /* Dimensões */
     width: 100%;
     margin: 0 auto;
     
