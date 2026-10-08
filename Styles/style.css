@@ -10,7 +10,7 @@ body {
     padding: 0;
     
     /* Estilo */
-    background-image: url('/Assets/bermuda-traingle.svg'); 
+    background-image: url('/Assets/plano-de-fundo-site.svg'); 
     
     /* Posicionamento */
     background-size: cover;
@@ -263,7 +263,7 @@ body {
 
 }
 
-.game-card {
+.games-and-products .game-card {
     /* Dimensões */
     width: 30%; 
     min-width: 250px; /* Garante tamanho mínimo em telas menores */
@@ -314,7 +314,7 @@ body {
     text-align: center;
 }
 
-.game-card:hover {
+.games-and-products .game-card:hover {
     /* Estilos */
     transform: translateY(-8px); /* Eleva o card levemente */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
@@ -446,6 +446,151 @@ body {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 } 
+
+/* ===== Página de Produtos ===== */
+
+.banner-produtos {
+    /* Dimensões */
+    padding: 15px 0;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.banner-produtos h1 {
+    /* Textos*/
+    font-weight: 500;
+}
+
+.banner-produtos p {
+    /* Textos */
+    font-size: 15px;
+}
+
+.container-categoria {
+    /* Dimensões */
+    margin-bottom: 50px;
+
+    /* Posicionamnto */
+    display: flex;
+    flex-direction: column;
+}
+
+.container-categoria h2 {
+    /*Dimensões*/
+    margin-left: 2.5%;
+    
+    /* Textos*/
+    text-align: left;
+}
+
+.container-produtos {
+    /* Dimensões */
+
+    /*Posicionamento*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.container-produtos .game-card {
+    /* Dimensões */
+    max-width: 20%;
+    min-width: 250px;
+
+    /* Posicionamento */
+    overflow: hidden;
+
+    /* Estilos */
+    background-color: #151f2a;
+    border: 1px solid #c49a52;
+    border-radius: 10px;
+}
+
+.container-produtos .game-card:hover {
+    /* Estilos */
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.container-produtos .game-card .game-card__image {
+    /* Dimensões */
+    width: 100%;
+    height: 200px;
+}
+
+.container-produtos .game-card .game-card__image img {
+    /* Dimensões */
+    width: 100%;
+    height: 100%;
+    
+    /* Posicionamento */
+    object-fit: cover;
+}
+
+.container-produtos .game-card .game-card__info {
+    /* Dimensões */
+    margin-bottom: 10px;
+    
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    /* Textos */
+    text-align: center;
+}
+
+.container-produtos .game-card .game-card__info span {
+    /* Dimensões */
+    margin-top: 10px;
+    
+    /* Textos */
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    /* Estilos */
+    color: #c49a52;
+}
+
+.container-produtos .game-card .game-card__info h3 {
+    /* Dimensões */
+    margin: 0;
+}
+
+.container-produtos .game-card .game-card__info p {
+    /* Textos*/
+    font-size: 12px;
+}
+
+.container-produtos .game-card .game-card__info a {
+    /* Dimensões */
+    padding: 5px;
+    
+    /* Posicionamento */
+    display: inline-block;
+
+    /* Textos */
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+
+    /* Estilos */
+    background-color: #c49a52;
+    border: solid 2px #c0c8d0;
+    border-radius: 10px;
+}
 
 /* ===== Rodapé (Footer) ===== */
 
