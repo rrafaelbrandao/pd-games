@@ -2,6 +2,8 @@
 
 * {
     box-sizing: border-box; /* Vai garantir que o padding e o border sejam calculados dentro das dimensões especificadas*/
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -590,6 +592,160 @@ body {
     background-color: #c49a52;
     border: solid 2px #c0c8d0;
     border-radius: 10px;
+}
+
+/* ===== Página de cada jogo ===== */
+
+.title-game {
+    /* Dimensões */
+    width: 100%;
+    height: 10vh;
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* Textos */
+    font-weight: 500;
+}
+
+/* Pôster principal */
+
+.game-details {
+    /* Dimensões */
+    width: 100%;
+    height: 90vh;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Mídia do jogo */
+
+.game-details__media {
+    /* Dimensões */
+    width: 60%;
+    height: 100%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game-details__media .game-details__poster {
+    /* Dimensões */
+    width: 100%;
+    height: 75%;
+}
+
+.game-details__media .game-details__poster img {
+    /* Dimensões */
+    width: 100%;
+    height: 100%;
+
+    /* Posicionamento */
+    object-fit: cover;
+}
+
+.game-details__media .game-details__screenshots {
+    /* Dimensões */
+    width: 100%;
+    height: 20%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.game-details__media .game-details__screenshots img {
+    /* Dimensões */
+    width: 15%;
+    height: 100%;
+
+    /* Posicionamento */
+    object-fit: cover;
+}
+
+/* Detalhes do jogo */
+
+.game-details__content {
+    /* Dimensões */
+    width: 30%;
+    height: 100%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+
+    /* Cores */
+    background-color:#33485a;
+
+}
+
+.game-details__content img {
+    /* Dimensões */
+    width: 100%;
+    height: 40%;
+    margin-bottom: 15px;
+
+    /* Posicionamento */
+    object-fit: cover;
+}
+
+.game-details__content p {
+    /* Dimensões */
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+
+    /* Textos */
+    text-align: justify;
+}
+
+
+.game-details__content span {
+    /* Dimensões */
+    width: 100%;
+    height: 10%;
+    margin-bottom: 15px;
+
+}
+
+.game-details__categories {
+    /* Dimensões */
+    width: 100%;
+    height: 20%;
+
+    /* Posicionemanto*/
+    display: flex;
+    flex-direction: column;
+}
+
+.game-details__categories-title {
+    /* Dimensões */
+    width: 100%;
+    height: 50%;
+}
+
+.game-details__characteristics {
+    /* Dimensões */
+    width: 100%;
+    height: 50%;
+
+    /* Posicionemanto*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.game-details__characteristics span {
+    /* Dimensões */
+    width: 30%;
+    height: 100%;
 }
 
 /* ===== Rodapé (Footer) ===== */
