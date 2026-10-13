@@ -748,6 +748,192 @@ body {
     height: 100%;
 }
 
+/* ===== Sinopse do jogo ===== */
+
+.title-synopsis {
+    /* Dimensões */
+    width: 100%;
+    height: 10vh;
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5vh;
+
+    /* Textos */
+    font-weight: 250;
+}
+
+.game-about {
+    /* Dimensões */
+    width: 100%;
+    height: 100%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.game-about__synopsis {
+    /* Dimensões */
+    width: 60%;
+    height: 100%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.game-about__synopsis .game-about__media {
+    /* Dimensões */
+    width: 100%;
+    height: 30%;
+    margin-bottom: 2.5%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+}
+
+.game-about__media p {
+    /* Dimensões */
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+
+    /* Textos */
+    text-align: justify;
+    font-weight: 250;
+}
+
+.game-about__media video {
+    /* Dimensões */
+    width: 100%;
+    height: auto;
+
+    /* Posicionamento */
+    object-fit: cover;
+}
+
+
+.game-about__details {
+    /* Dimensões */
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    gap: 20px;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+}
+
+.game-about__details .game-about__indicative-rating {
+    /* Dimensões */
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+
+    /* Cores */
+    background-color:#0b1118;
+}
+
+.game-about__indicative-rating h4 {
+    /* Dimensões */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.game-about__indicative-rating .game-about__age {
+    /* Dimensões */
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    gap: 10px;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.game-about-age img {
+    /* Dimensões */
+    width: 50%;
+    height: 100%;
+
+    /* Posicionamento */
+    object-fit: contain;
+}
+
+.game-about__age .game-about__explicit-content {
+    /* Dimensões */
+    width: 50%;
+    height: 100%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+
+    /* Textos */
+    font-size: 15px;
+
+}
+
+.game-about__languages {
+    /* Cores */
+    background-color:#0b1118;
+
+}
+
+.game-about__details .game-about__languages {
+    /* Dimensões */
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+
+    /* Cores */
+    background-color:#0b1118;
+}
+
+.game-about__languages h4 {
+    /* Dimensões */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.game-about__languages .game_about__lang-options {
+    /* Dimensões */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    
+    /* Posicionamento */
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+
+    /* Textos */
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
 /* ===== Rodapé (Footer) ===== */
 
 .main-footer {
