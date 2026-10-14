@@ -847,6 +847,15 @@ body {
     object-fit: cover;
 }
 
+.game-about__media img {
+    /* Dimensões */
+    width: 100%;
+    height: auto;
+
+    /* Posicionamento */
+    object-fit: cover;
+}
+
 
 .game-about__details {
     /* Dimensões */
