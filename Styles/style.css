@@ -21,6 +21,12 @@ body {
     background-repeat: no-repeat;
 }
 
+a img {
+    /* Estilos */
+    border: none;
+    outline: none;
+}
+
 .cinzel-titulos {
     /* Textos*/
     font-family: "Cinzel", serif;
@@ -1032,7 +1038,132 @@ body {
     flex-direction: column;
 }
 
+/* ===== Contato ===== */
+.contact-title {
+    /* Dimensões */
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
 
+    /* Textos */
+    text-align: center;
+}
+
+.contact-info {
+    /* Dimensões */
+    width: 90%;
+    height: 25vh;
+    margin: 25px 5%;
+
+    /* Posicioanmento */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-info__address, 
+.contact-info__email, 
+.contact-info__opening-hours {
+    /* Dimensões */
+    width: 30%;
+    height: 100%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    /* Estilos */
+    border: 2px solid #c49a52;
+    border-radius: 10px;
+
+    /* Cores */
+    background-color:#151f2a;
+}
+
+.contact-info__address span,
+.contact-info__email span, 
+.contact-info__opening-hours span {
+    /* Textos */
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contact-card {
+    /* Dimensões */
+    width: 90%;
+    height: 100%;
+    margin: 25px 5%;
+    padding: 20px;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+
+    /* Estilos */
+    border: 2px solid #c49a52;
+    border-radius: 10px;
+
+    /* Cores */
+    background-color:#151f2a;
+}
+
+.contact-card form input, 
+.contact-card form textarea {
+    /* Dimensões e espaçamento interno */
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+    /* Cores e bordas */
+    background-color: #0b1118;
+    color: #ffffff;
+    border: 1px solid #c49a52;
+    border-radius: 6px;
+
+    /* Fontes */
+    font-size: 15px;
+    outline: none;
+
+}
+
+.contact-card form textarea {
+    resize: vertical; /* Ajuste somente vertical */
+    min-height: 100px;
+}
+
+.contact-card form button {
+    /* Dimensões */
+    width: 100%;
+    height: auto;
+    padding: 15px;
+
+    /* Cores */
+    background-color: #4B1F25;
+
+    /* Fontes */
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    /* Estilos  */
+    border: 2px solid #c49a52;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-card form button:hover {
+    background-color: #c49a52;
+    color: #0b1118;
+}
 
 /* ===== Rodapé (Footer) ===== */
 
